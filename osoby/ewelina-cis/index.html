@@ -1,57 +1,156 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Ewelina Cis Wydania  „Ewelina Cis” | POZa Linią</title>
+		<title>Ewelina Cis: teksty |  POZa Linią</title>
 		<link rel="stylesheet" href="/common.css">
-	</head>
-	<body>
-		<header style="text-align: center; font-size: 3em; font-weight: bold">
-			<a href="/">POZa Linią</a>
-		</header>
+<style>
+@font-face {
+  font-family: "Lora";
+  src: url("/assets/Lora/Lora-VariableFont_wght.ttf") format("truetype");
+}
+.inactive {
+	color: #ccc;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #333;
+		color: white;
+	}
+	.inactive {
+		color: #999;
+	}
+}
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 1700px;
+	margin-inline: auto;
+	padding: 10px;
+	gap: 1rem;
+	font-family: sans-serif;
+	font-size: 18px;
+	min-height: 100vh;
+	min-height: 100svh;
+	max-width: 70ch;
+}
+a:link,a:visited {
+		color: #006edc;
+}
+@media (prefers-color-scheme: dark) {
+	a:link,a:visited {
+		color: #15ad93;
+	}
+}
 
-		<section style="margin: auto; max-width: 80ch">
-			<h2>Opublikowane teksty od Ewelina Cis</h2>
+p {
+	line-height: 1.6;
+	font-family: Lora, sans-serif;
+}
+aside {
+	padding: 5px;
+}
+
+@media only screen and (min-width: 150ch) {
+	aside {
+		position: absolute;
+		top: 2rem;
+		left: 105%;
+		width: 40ch;
+	}
+	aside > details {
+		border-radius: 0.5rem; padding: 0.5rem; color: #030313;
+		background-color: #ffd289;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		aside > details {
+			background-color: #d5d3bf;
+		}
+	}
+}
+
+h1 > * {
+	margin: 0;
+	padding: 0;
+	text-wrap: balance;
+}
+
+#goprev, #gonext {
+	transition: transform 300ms ease-in;
+}
+
+#goprev:hover, #gonext:hover {
+	transform: scale(1.2);
+}
+
+details span::after {
+	content: " (rozwiń)";
+	opacity: 0.7;
+}
+
+details[open] span::after {
+	content: " (zwiń)";
+	opacity: 0.7;
+}
+</style>
+	</head>
+	<body style="display: flex; flex-direction: column; justify-content: space-between">
+		<div>
+			<header style="display: flex; justify-content: center">
+				<a href="/">
+					<picture>
+						<source srcset="/assets/logo_dark.png" media="(prefers-color-scheme: dark)">
+						<img src="/assets/logo_light.png" style="height: max(8rem, 25vh)" alt="Logo czasopisma POZa Linią">
+					</picture>
+				</a>
+			</header>
+			<main style="position: relative">
+				<h1 style="text-align: center">
+					Ewelina Cis
+					<br>
+				</h1>
+
 			Ewelina Cis – autorka wierszy i krótkich form prozatorskich. Publikowała m.in. w „8. Arkuszu Odry” i „Kontencie”. Laureatka konkursów poetyckich, m.in. XXXI OKP im. K.K. Baczyńskiego i XXXVI OKP im. Zbigniewa Herberta. Zawodowo art directorka i projektantka graficzna. Mieszka i pracuje w Warszawie, z której nie pochodzi.
 
-				<h3>***[Ciepły oddech]</h3>
-				<p>Ciepły oddech światła na twarzy,<br>
-lepkiego światła rozgrzanej lawy<br>
-w lampie z lawą. Źle czy dobrze<br>
-jest kochać rzeczy jak ludzi?</p>
-<p>To, że nie słyszysz pytania,<br>
-to nie znaczy, że nie padło<br>
-w myśli, a język drga. Te słowa są<br>
-żywe, poruszają językiem; one, nie ja.</p>
-<p>Te same zasady, które panują w lampie<br>
-z lawą panują w kosmosie. Te same<br>
-siły, które poruszają lawę w lampie<br>
-z lawą rodzą gwiazdy, mnożą odpowiedzi.</p>
+			<h2 style="text-align: center">Zbiór tekstów</h2>
 
+			<p>Teksty opublikowane w ramach wydania 1 czasopisma:</p>
 
-<!-- TODO: Change group_id, release_id to names in UI -->
-				<p style="font-style: italic">Tekst opublikowany w <a href="/1">wydaniu 1</a> w ramach <a href="/1/1">grupy 1</a>
-				<h3>***(Jeśli zamknę lewe oko)</h3>
-				<p>Jeśli zamknę lewe oko:<br>
-ludzie wloką swoje cienie.<br>
-Jeśli zamknę prawe oko:<br>
-cienie popychają swoich ludzi.<br>
-</p>
-<p>Wszyscy (i ludzie, i cienie)<br>
-przyszli leżeć na wymierzonej<br>
-w słońce płycie i słuchać<br>
-mechanicznych ptaków.</p>
-<p>Podzielona boli mniej ta tęsknota.<br>
-Jest w nas czerń i biel, bieli jest<br>
-więcej, mniej jest czerni, która,<br>
-zobacz sam: zmienia się w szarość,<br>
-barwi beton.</p>
+<ul>
+				<li><a href="/1/1/ciep%C5%82y-oddech/">***[Ciepły oddech]</a></li>
+				<li><a href="/1/1/je%C5%9Bli-zamkn%C4%99-lewe-oko/">***(Jeśli zamknę lewe oko)</a></li>
+			</main>
+		</div>
+		<footer style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 0.5rem">
+	<div style="display: flex; flex-direction: row; gap: 1ch; justify-content: center; align-items: center">
+		<a style="font-size: 1.2em" href="/">Strona Główna</a>
+		<a style="font-size: 1.2em" href="/o-nas/">O Nas</a>
+		<a style="font-size: 1.2em" href="/kontakt/">Kontakt</a>
+	</div>
+	<div style="display: flex; gap: 1ch">
+		<a href="https://www.facebook.com/czasopismo.pozalinia/" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=435&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=435&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+		<a href="https://www.instagram.com/pozalinia/" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=32292&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=32292&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+		<a href="/releases.rss" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=478&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=478&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+	</div>
+</footer>
 
-
-<!-- TODO: Change group_id, release_id to names in UI -->
-				<p style="font-style: italic">Tekst opublikowany w <a href="/1">wydaniu 1</a> w ramach <a href="/1/1">grupy 1</a>
-		</section>
 	</body>
 </html>
-

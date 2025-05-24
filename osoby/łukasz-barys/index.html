@@ -1,94 +1,157 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Łukasz Barys Wydania  „Łukasz Barys” | POZa Linią</title>
+		<title>Łukasz Barys: teksty |  POZa Linią</title>
 		<link rel="stylesheet" href="/common.css">
-	</head>
-	<body>
-		<header style="text-align: center; font-size: 3em; font-weight: bold">
-			<a href="/">POZa Linią</a>
-		</header>
+<style>
+@font-face {
+  font-family: "Lora";
+  src: url("/assets/Lora/Lora-VariableFont_wght.ttf") format("truetype");
+}
+.inactive {
+	color: #ccc;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #333;
+		color: white;
+	}
+	.inactive {
+		color: #999;
+	}
+}
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 1700px;
+	margin-inline: auto;
+	padding: 10px;
+	gap: 1rem;
+	font-family: sans-serif;
+	font-size: 18px;
+	min-height: 100vh;
+	min-height: 100svh;
+	max-width: 70ch;
+}
+a:link,a:visited {
+		color: #006edc;
+}
+@media (prefers-color-scheme: dark) {
+	a:link,a:visited {
+		color: #15ad93;
+	}
+}
 
-		<section style="margin: auto; max-width: 80ch">
-			<h2>Opublikowane teksty od Łukasz Barys</h2>
+p {
+	line-height: 1.6;
+	font-family: Lora, sans-serif;
+}
+aside {
+	padding: 5px;
+}
+
+@media only screen and (min-width: 150ch) {
+	aside {
+		position: absolute;
+		top: 2rem;
+		left: 105%;
+		width: 40ch;
+	}
+	aside > details {
+		border-radius: 0.5rem; padding: 0.5rem; color: #030313;
+		background-color: #ffd289;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		aside > details {
+			background-color: #d5d3bf;
+		}
+	}
+}
+
+h1 > * {
+	margin: 0;
+	padding: 0;
+	text-wrap: balance;
+}
+
+#goprev, #gonext {
+	transition: transform 300ms ease-in;
+}
+
+#goprev:hover, #gonext:hover {
+	transform: scale(1.2);
+}
+
+details span::after {
+	content: " (rozwiń)";
+	opacity: 0.7;
+}
+
+details[open] span::after {
+	content: " (zwiń)";
+	opacity: 0.7;
+}
+</style>
+	</head>
+	<body style="display: flex; flex-direction: column; justify-content: space-between">
+		<div>
+			<header style="display: flex; justify-content: center">
+				<a href="/">
+					<picture>
+						<source srcset="/assets/logo_dark.png" media="(prefers-color-scheme: dark)">
+						<img src="/assets/logo_light.png" style="height: max(8rem, 25vh)" alt="Logo czasopisma POZa Linią">
+					</picture>
+				</a>
+			</header>
+			<main style="position: relative">
+				<h1 style="text-align: center">
+					Łukasz Barys
+					<br>
+				</h1>
+
 			Łukasz Barys – (ur. 1997) autor m.in. powieści „Kości, które nosisz w kieszeni” oraz „Jeśli przecięto cię na pół”. Laureat  Paszportu „Polityki", Nagrody im. Adama Włodka, Nagrody Dramaturgicznej im. Tadeusza Różewicza. Nominowany również do Nagrody im. Stanisława Barańczaka i Odkryć Empiku. Mieszka w Pabianicach.
 
-				<h3>***[Na komunię dostała medalik ze złota]</h3>
-				<p><strong><strong>Na komunię</strong></strong> dostała medalik ze złota;<br>
-w ten sposób dowiedziała się, że dorośnie.<br>
-Rozpłakała się, ale dopiero wieczorem;<br>
-poszła za budę psa; palce miała śmierdzące metalem,<br>
-to przez płaską, złotą madonnę na medaliku,<br>
-którą matka, bardzo prędko, schowała w kredensie.<br>
-Pies szczekał na nią – widząc poprzez czas.</p>
+			<h2 style="text-align: center">Zbiór tekstów</h2>
 
+			<p>Teksty opublikowane w ramach wydania 1 czasopisma:</p>
 
-<!-- TODO: Change group_id, release_id to names in UI -->
-				<p style="font-style: italic">Tekst opublikowany w <a href="/1">wydaniu 1</a> w ramach <a href="/1/1">grupy 1</a>
-				<h3>***[Wisiał na drzewie]</h3>
-				<p><strong><strong>Wisiał na drzewie</strong></strong>;<br>
-wszedł na rusztowanie,<br>
-równie piękne, co kości,<br>
-które czuł pod skórą i czasami macał;<br>
-miał wrażenie, że parzą.<br>
-Nie powinien zastanawiać się nad kośćmi,<br>
-bo one należą do bóstw i zwierząt.</p>
-<p>Tak to sobie tłumaczył,<br>
-będąc chłopcem badał własne ciało,<br>
-które zdawało się obce.<br>
-Chciał się rozpłakać,<br>
-ale naprawdę nie umiał,<br>
-zrozumiał, że należy do surowego rodu<br>
-patrząc na twarze kobiet w kościele.</p>
-<p>Jeszcze zrozumiał, że będzie miał wąskie usta,<br>
-odkąd  otarł się o policzek dziadka –<br>
-teraz widział maleńkie literki<br>
-wbite w skórę starca i zastanawiał się,<br>
-czemu tak się wścieka na pęknięte szkło.</p>
-<p>Jego nic takiego nie obchodziło.<br>
-Kochał bławatka, kota i tartan,<br>
-a szkło wkładał sobie do kieszeni<br>
-i oglądał przez nie słońce.</p>
-<p>Od pewnego czasu wstawało wraz z nimi,<br>
-lecz odczuwał obcość słońca, nienawidził siebie.</p>
-<p>Skóra, którą miał obwiązane kości.<br>
-Chciał tę skórę spalić.</p>
+<ul>
+				<li><a href="/1/1/na-komuni%C4%99/">***[Na komunię dostała medalik ze złota]</a></li>
+				<li><a href="/1/1/wisia%C5%82-na-drzewie/">***[Wisiał na drzewie]</a></li>
+				<li><a href="/1/1/sernik-na-zimno/">***[Sernik na zimno]</a></li>
+			</main>
+		</div>
+		<footer style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 0.5rem">
+	<div style="display: flex; flex-direction: row; gap: 1ch; justify-content: center; align-items: center">
+		<a style="font-size: 1.2em" href="/">Strona Główna</a>
+		<a style="font-size: 1.2em" href="/o-nas/">O Nas</a>
+		<a style="font-size: 1.2em" href="/kontakt/">Kontakt</a>
+	</div>
+	<div style="display: flex; gap: 1ch">
+		<a href="https://www.facebook.com/czasopismo.pozalinia/" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=435&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=435&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+		<a href="https://www.instagram.com/pozalinia/" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=32292&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=32292&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+		<a href="/releases.rss" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=478&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=478&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+	</div>
+</footer>
 
-
-<!-- TODO: Change group_id, release_id to names in UI -->
-				<p style="font-style: italic">Tekst opublikowany w <a href="/1">wydaniu 1</a> w ramach <a href="/1/1">grupy 1</a>
-				<h3>***[Sernik na zimno]</h3>
-				<p><strong><strong>Sernik na zimno;</strong></strong><br>
-drżące i pełne dni lata.<br>
-Mrówki na chodniku,<br>
-można powtarzać nasze kroki<br>
-w nieskończoność,<br>
-niech pachną choinką i szlaką.<br>
-Niech cuchną obornikiem.</p>
-<p>Sernik na zimno,<br>
-zostaw truskawkę –<br>
-powiedziała matka,<br>
-lecz on wrzucił do ust<br>
-tę truskawkę.</p>
-<p>Usta są podobne do zamrażarki,<br>
-truskawki do kamieni;<br>
-to ciasto trzeba odstawić.<br>
-Jeśli będziesz otwierał lodówkę,<br>
-to odwiążesz prąd.</p>
-<p>Idzie i zbiera truskawki,<br>
-za brata ma słońce.<br>
-Brat zamienia się w słońce.<br>
-Palce są truskawkami.<br>
-Rosną mu brodawki – i to dziwne<br>
-pod brodą; które zabroni<br>
-płakać.</p>
-
-
-<!-- TODO: Change group_id, release_id to names in UI -->
-				<p style="font-style: italic">Tekst opublikowany w <a href="/1">wydaniu 1</a> w ramach <a href="/1/1">grupy 1</a>
-		</section>
 	</body>
 </html>
-

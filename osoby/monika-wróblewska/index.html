@@ -1,31 +1,155 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Monika Wróblewska Wydania  „Monika Wróblewska” | POZa Linią</title>
+		<title>Monika Wróblewska: teksty |  POZa Linią</title>
 		<link rel="stylesheet" href="/common.css">
-	</head>
-	<body>
-		<header style="text-align: center; font-size: 3em; font-weight: bold">
-			<a href="/">POZa Linią</a>
-		</header>
+<style>
+@font-face {
+  font-family: "Lora";
+  src: url("/assets/Lora/Lora-VariableFont_wght.ttf") format("truetype");
+}
+.inactive {
+	color: #ccc;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #333;
+		color: white;
+	}
+	.inactive {
+		color: #999;
+	}
+}
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 1700px;
+	margin-inline: auto;
+	padding: 10px;
+	gap: 1rem;
+	font-family: sans-serif;
+	font-size: 18px;
+	min-height: 100vh;
+	min-height: 100svh;
+	max-width: 70ch;
+}
+a:link,a:visited {
+		color: #006edc;
+}
+@media (prefers-color-scheme: dark) {
+	a:link,a:visited {
+		color: #15ad93;
+	}
+}
 
-		<section style="margin: auto; max-width: 80ch">
-			<h2>Opublikowane teksty od Monika Wróblewska</h2>
+p {
+	line-height: 1.6;
+	font-family: Lora, sans-serif;
+}
+aside {
+	padding: 5px;
+}
+
+@media only screen and (min-width: 150ch) {
+	aside {
+		position: absolute;
+		top: 2rem;
+		left: 105%;
+		width: 40ch;
+	}
+	aside > details {
+		border-radius: 0.5rem; padding: 0.5rem; color: #030313;
+		background-color: #ffd289;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		aside > details {
+			background-color: #d5d3bf;
+		}
+	}
+}
+
+h1 > * {
+	margin: 0;
+	padding: 0;
+	text-wrap: balance;
+}
+
+#goprev, #gonext {
+	transition: transform 300ms ease-in;
+}
+
+#goprev:hover, #gonext:hover {
+	transform: scale(1.2);
+}
+
+details span::after {
+	content: " (rozwiń)";
+	opacity: 0.7;
+}
+
+details[open] span::after {
+	content: " (zwiń)";
+	opacity: 0.7;
+}
+</style>
+	</head>
+	<body style="display: flex; flex-direction: column; justify-content: space-between">
+		<div>
+			<header style="display: flex; justify-content: center">
+				<a href="/">
+					<picture>
+						<source srcset="/assets/logo_dark.png" media="(prefers-color-scheme: dark)">
+						<img src="/assets/logo_light.png" style="height: max(8rem, 25vh)" alt="Logo czasopisma POZa Linią">
+					</picture>
+				</a>
+			</header>
+			<main style="position: relative">
+				<h1 style="text-align: center">
+					Monika Wróblewska
+					<br>
+				</h1>
+
 			Monika Wróblewska - absolwentka sztuki pisania na Uniwersytecie Śląskim. Interesuje się historią świata, baśniowymi motywami w literaturze, posthumanizmem, a także folklorem azjatyckim – szczególnie malajskim i koreańskim. Jest pasjonatką małych lokalnych historii. W 2023 roku ukazał się jej wywiad z przewodnikiem sudeckim na portalu: tudolnyslask.info. Od 2024 roku pracuje jako redaktorka w „Czasopiśmie Skrawki”. Obecnie studentka twórczego pisania i marketingu wydawniczego.
 
-				<h3>POKÓJ</h3>
-				<p>Nazajutrz nikt nie umarł. Nikt z tego piętra. W pokoju nr trzy, a właściwie na sali, która tę funkcję miała spełniać, leżały dwie pacjentki. Obie pokryte po szyję cienką warstwą materiału. Noce w tych zakładowych ,,pokojach” były na przemian duszne albo chłodne. Maria K. z trudem łapała oddech. Zwłaszcza po ostatniej, bardzo tajemniczej infekcji gardła. Spuchła wtedy okropnie, wyła z bólu i błagała o pomoc. Łzy z jej mętnych oczu wsiąkały w poduszkę. Personel medyczny tylko rozkładał ręce. Wszyscy sądzili, że to koniec. Że tym razem jej krewny nie przyjedzie do cioci, lecz po jej zmarniałe ciało. Ten, co ją tutaj umieścił przez znajomości.</p>
-<p>Maria pracowała niegdyś jako polonistka w podstawówce. Dzieci ją lubiły. Nie biła linijką po łapach jak inni nauczyciele. Podobnie było prywatnie. Każdy darzył ją szacunkiem, zaufaniem. Miała bardzo udane życie oraz małżeństwo. Nigdy jednak nie sądziła, że trafi tutaj. Co noc śniła o tym samym. O małżonku, staruszku, już dawno spoczywającym na cmentarzu, o kocie czarno-białym, nazywanym pieszczotliwie ,,Pępek”, o mieszkaniu na drugim piętrze z okazałym balkonem. Oczywiście już nienależącym do niej, lecz do bratanka, z zawodu policjanta, z zamiłowania ,,pijusa”.</p>
-<p>Podobne dolegliwości miała jej towarzyszka Teresa D. Przez lata dużo paliła. A teraz jej płuca przestały prawidłowo funkcjonować. Ale cóż począć? Lubiła palić przed pracą, po pracy, szczególnie na przystanku. Jeden miała zawód przez całe życie – kontrolerka biletów w tramwaju, autobusie itd. Taka praca niby nic złego, ale jak się człowiek przyzna do ,,kanarowania” to po tobie. Ludzie nie lubią być kontrolowani. Nie stać mnie, pani z biednej rodziny jestem albo jaka dzisiaj piękna pogoda, nie uważa pani? – słyszała wiele razy. Ale to jeszcze ta najłagodniejsza forma. Pasażerowie byli mniej lub bardziej agresywni. Mimo wszystko uważała swój zawód za misję. Bez niego prawidłowe funkcjonowanie transportu publicznego nie było możliwe. Teresa miała męża kolejarza i trójkę dzieci – samych chłopców. Po nagłej śmierci Karola musiała wychować ich sama. Szczęśliwie na przemian pomagały jej sąsiadki. Ta zaprowadziła do przedszkola, ta zmieniła pampersa, ta dokarmiła chlebem ze smalcem. Obecnie nie żyją ani sąsiadki, ani pociechy. Wszystkich zabrały wypadki, choróbska, kłopoty małżeńskie. Pozostał się jej na tym świecie tylko jeden wnuczek, dojrzały mężczyzna – biznesmen.</p>
-<p>Nagle Teresa poczuła przez sen kojące ciepło. Promieniowało od prawej dłoni do łokcia. Gdy uchyliła powieki, ujrzała nieznaną pielęgniarkę, w wieku ok. trzydziestu lat. Wcierała w obolałe, wysuszone ręce olejek. Przyjazny zapach truskawki przypominał dzieciństwo. To jakiś anioł – pomyślała. Wilgotna substancja wypełniała drobne, lecz uciążliwe ranki między palcami. Teresa czuła ogromny spokój, lecz nie miała sił podziękować. Od dawna już nie mówiła. Wydawała jedynie ciche jęki. Jeszcze rok temu potrafiła samodzielnie chodzić, siadać. Wtedy jeszcze miała dla kogo to robić. Obecnie nawet prosta czynność sprawiała jej ogromny kłopot. Wszystko było słabe, zbyt słabe – ręce i nogi. Na dodatek niesforny umysł płatał figle. Raz widziała szpital, innym razem swoje mieszkanie. Raz widziała twarz pielęgniarki, innym razem swojego wnuka. Czuła wewnętrznie, że niedługo zgaśnie tak jak Zofia. Ile można się tak męczyć?</p>
-<p>Na trzecim łóżku spała Zofia N. – ich dobra koleżanka. Odeszła wczoraj, w milczeniu, w bezbarwne popołudnie. Ta najbardziej żywotna. Ta, która uwielbiała wyglądać przez okno i rozmawiać z pielęgniarkami o narodzinach liści. Podobno w młodości była botaniczką. Drzewa o tej porze roku były jedynie ciemnymi, wysuszonymi badylami. A ona wolała egzystować w innej scenerii. Niestety nie doczekała ani zielonych pędów, ani poprawy stanu zdrowia. Przy posłaniu Zofii, a wcześniej wielu innych, zapomnianych imion, nikt się nie krzątał. Łóżko nakryte prześcieradłem o drażniącym zapachu oczekiwało na kolejne wychudzone ciało.</p>
+			<h2 style="text-align: center">Zbiór tekstów</h2>
 
+			<p>Teksty opublikowane w ramach wydania 1 czasopisma:</p>
 
-<!-- TODO: Change group_id, release_id to names in UI -->
-				<p style="font-style: italic">Tekst opublikowany w <a href="/1">wydaniu 1</a> w ramach <a href="/1/1">grupy 1</a>
-		</section>
+<ul>
+				<li><a href="/1/1/pok%C3%B3j/">POKÓJ</a></li>
+			</main>
+		</div>
+		<footer style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 0.5rem">
+	<div style="display: flex; flex-direction: row; gap: 1ch; justify-content: center; align-items: center">
+		<a style="font-size: 1.2em" href="/">Strona Główna</a>
+		<a style="font-size: 1.2em" href="/o-nas/">O Nas</a>
+		<a style="font-size: 1.2em" href="/kontakt/">Kontakt</a>
+	</div>
+	<div style="display: flex; gap: 1ch">
+		<a href="https://www.facebook.com/czasopismo.pozalinia/" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=435&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=435&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+		<a href="https://www.instagram.com/pozalinia/" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=32292&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=32292&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+		<a href="/releases.rss" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=478&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=478&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+	</div>
+</footer>
+
 	</body>
 </html>
-
