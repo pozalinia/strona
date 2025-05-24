@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Olga Juskowiak: teksty |  POZa Linią</title>
+		<title>fala w polu | Wydanie 1 POZa Linią</title>
 		<link rel="stylesheet" href="/common.css">
 <style>
 @font-face {
@@ -108,22 +108,48 @@ details[open] span::after {
 				</a>
 			</header>
 			<main style="position: relative">
-				<h1 style="text-align: center">
-					Olga Juskowiak
-					<br>
+				<h1 style="text-align: center; display: flex; gap: 1rem; justify-content: center; align-items: center">
+
+						<a id="goprev" href="/1/4/perfekcyjna-burza/" style="text-decoration: none">◁</a>
+
+					<p>fala w polu</p>
+
+
+						<a id="gonext" href="/1/4/jedyny-%C5%9Bnieg-tego-lata/" style="text-decoration: none">▷</a>
 				</h1>
+				<p>koniom lżej, można to dosyć łatwo usłyszeć<br>
+z czwartego piętra rozbiegają się<br>
+tak lekko:<br>
+<span style="display:inline-block;width:4ch"></span>klip-klap<br>
+<span style="display:inline-block;width:8ch"></span>klip-klap<br>
+przesuwając dyskretnie ku czerwonemu krańcowi<br>
+widma<br>
+widma. ślady<br>
+obrzęki<br>
+puchniesz w każdym miejscu inaczej<br>
+toczymy się<br>
+jeszcze razem ale dystans<br>
+rośnie<br>
+<span style="display:inline-block;width:8ch"></span>- tak wynika ze wzoru</p>
 
-			Olga Juskowiak – graficzka, poetka, absolwentka poznańskiej Akademii Sztuk Pięknych. Jej książka „Zamawiamy gofry” zdobyła Nagrodę Specjalną w XXIX Konkursie im. Jacka Bierezina w 2023 roku. Nagradzana i wyróżniana także w innych konkursach, np. Nowym Dokumencie Tekstowym czy Konkursie im. Anny Świrszczyńskiej. Publikowała m.in. w „Czasie Literatury”, „8. Arkuszu Odry”, „Nowym Napisie”, „Tyglu Kultury”, „Stronie Czynnej”, „Liberte”, „Tlenie Literackim”, „Helikopterze”, „Suburbiach”. Zawodowo i prywatnie związana z Poznaniem. Ma dwie córki.
-
-			<h2 style="text-align: center">Zbiór tekstów</h2>
-
-			<p>Teksty opublikowane w ramach wydania 1 czasopisma:</p>
-
-<ul>
-				<li><a href="/1/4/jedyny-%C5%9Bnieg-tego-lata/">jedyny śnieg tego lata</a></li>
-				<li><a href="/1/4/fala-w-polu/">fala w polu</a></li>
-				<li><a href="/1/4/by%C5%82a-jeszcze-tak-ma%C5%82a/">była jeszcze tak mała</a></li>
+				<aside>
+					<details class="bio">
+						<summary><span>Olga Juskowiak</span></summary>
+						Olga Juskowiak – graficzka, poetka, absolwentka poznańskiej Akademii Sztuk Pięknych. Jej książka „Zamawiamy gofry” zdobyła Nagrodę Specjalną w XXIX Konkursie im. Jacka Bierezina w 2023 roku. Nagradzana i wyróżniana także w innych konkursach, np. Nowym Dokumencie Tekstowym czy Konkursie im. Anny Świrszczyńskiej. Publikowała m.in. w „Czasie Literatury”, „8. Arkuszu Odry”, „Nowym Napisie”, „Tyglu Kultury”, „Stronie Czynnej”, „Liberte”, „Tlenie Literackim”, „Helikopterze”, „Suburbiach”. Zawodowo i prywatnie związana z Poznaniem. Ma dwie córki.
+						<a href="/osoby/olga-juskowiak/">Wszystkie teksty</a>
+					</details>
+				</aside>
 			</main>
+			<nav class="bottom" style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 1rem; font-size: 2rem; margin-top: 2rem">
+					<a id="goprev" href="/1/4/perfekcyjna-burza/" style="text-decoration: none">◁</a>
+
+				<div style="display: flex; gap: 1ch; margin: 0">
+					<a style="font-size: 1rem" href="/1/">Wydanie 1 „Geometrie”</a>
+					<a style="font-size: 1rem" href="/1/4/">FALE & FUNKCJE</a>
+				</div>
+
+					<a id="gonext" href="/1/4/jedyny-%C5%9Bnieg-tego-lata/" style="text-decoration: none">▷</a>
+			</nav>
 		</div>
 		<footer style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 0.5rem">
 	<div style="display: flex; flex-direction: row; gap: 1ch; justify-content: center; align-items: center">
@@ -153,5 +179,14 @@ details[open] span::after {
 	</div>
 </footer>
 
+		<script>
+			document.addEventListener('keyup', (e) => {
+				switch (e.key) {
+				case 'ArrowLeft':  document.getElementById('goprev')?.click(); e.preventDefault(); return false;
+				case 'ArrowRight': document.getElementById('gonext')?.click(); e.preventDefault(); return false;
+				}
+			});
+		</script>
 	</body>
 </html>
+
