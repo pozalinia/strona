@@ -15,6 +15,11 @@
   src: url("/assets/Lora/Lora-VariableFont_wght.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Oswald";
+  src: url("/assets/Oswald/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+
 body {
 	margin-top: 0;
 	margin-bottom: 0;
