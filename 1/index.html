@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Wydanie 1 | POZa Linią</title>
+		<link rel="stylesheet" href="/common.css">
+<style>
+body {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	max-width: 1000px;
+	box-sizing: border-box;
+	margin-inline: auto;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #333;
+		color: white;
+	}
+}
+#top {
+	max-width: 1000px;
+	height: 2rem;
+	margin: auto;
+	background-image: url("./poza_linia_okladka_B.webp");
+	background-size: contain;
+}
+
+#grid {
+	display: grid;
+	gap: 1rem;
+	margin-inline: auto;
+}
+
+#grid a:link,
+#grid a:visited {
+	color: #2780bf;
+	font-weight: bold;
+}
+
+@media (min-width: 60ch) {
+	#grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media (min-width: 100ch) {
+	#grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+figure,figcaption,picture {
+	margin: 0;
+	padding: 0;
+}
+a:link,a:visited {
+		color: #006edc;
+}
+@media (prefers-color-scheme: dark) {
+	a:link,a:visited {
+		color: #15ad93;
+	}
+	.groupimg {
+		background-color: #d3d2bd;
+	}
+}
+footer {
+	border-top: 2px solid #ffbd59;
+}
+</style>
+	</head>
+	<body>
+		<header style="display: flex; justify-content: center">
+			<a href="/">
+				<picture>
+					<source srcset="/assets/logo_dark.png" media="(prefers-color-scheme: dark)">
+					<img src="/assets/logo_light.png" style="height: max(8rem, 25vh)" alt="Logo czasopisma POZa Linią">
+				</picture>
+			</a>
+		</header>
+
+		<main>
+			<div id="top"></div>
+				<div style="max-width: 1000px; margin: 0 auto; padding: 0; line-height: 0.5rem">
+				<h1 style="text-align: center; margin-bottom: 4rem">Wydanie 1 „Geometrie”, 24.05.2025</h1>
+			</div>
+
+
+
+			<section id="grid">
+					<a href="/1/przedmowa/" id="przedmowa">
+						<figure style="position: relative">
+							<picture class="groupimg">
+								<source srcset="/assets/przedmowa_dark.png" media="(prefers-color-scheme: dark)">
+								<img src="/assets/przedmowa_light.png" style="width: 100%; height: auto" width="2084" height="1033">
+							</picture>
+							<figcaption style="position: absolute; bottom: 6%; right: 2ch">Przedmowa</figcaption>
+						</figure>
+					</a>
+					<a href="/1/1/" id="">
+						<figure style="position: relative">
+							<picture class="groupimg">
+								<source srcset="/assets/piony_dark.png" media="(prefers-color-scheme: dark)">
+								<img src="/assets/piony_light.png" style="width: 100%; height: auto" width="2084" height="1033">
+							</picture>
+							<figcaption style="position: absolute; bottom: 6%; right: 2ch">PIONY // POZIOMY</figcaption>
+						</figure>
+					</a>
+					<a href="/1/2/" id="">
+						<figure style="position: relative">
+							<picture class="groupimg">
+								<source srcset="/assets/punkty_dark.png" media="(prefers-color-scheme: dark)">
+								<img src="/assets/punkty_light.png" style="width: 100%; height: auto" width="2084" height="1033">
+							</picture>
+							<figcaption style="position: absolute; bottom: 6%; right: 2ch">PUNKTY → SKUPISKA</figcaption>
+						</figure>
+					</a>
+					<a href="/1/1/" id="">
+						<figure style="position: relative">
+							<picture class="groupimg">
+								<source srcset="/assets/proste_dark.png" media="(prefers-color-scheme: dark)">
+								<img src="/assets/proste_light.png" style="width: 100%; height: auto" width="2084" height="1033">
+							</picture>
+							<figcaption style="position: absolute; bottom: 6%; right: 2ch">PROSTE = (Z)ŁAMANE</figcaption>
+						</figure>
+					</a>
+					<a href="/1/1/" id="">
+						<figure style="position: relative">
+							<picture class="groupimg">
+								<source srcset="/assets/funkcje_dark.png" media="(prefers-color-scheme: dark)">
+								<img src="/assets/funkcje_light.png" style="width: 100%; height: auto" width="2084" height="1033">
+							</picture>
+							<figcaption style="position: absolute; bottom: 6%; right: 2ch">FUNKCJE & FALE</figcaption>
+						</figure>
+					</a>
+					<a href="/1/osoby/" id="">
+						<figure style="position: relative">
+							<picture class="groupimg">
+								<source srcset="/assets/blank_dark.png" media="(prefers-color-scheme: dark)">
+								<img src="/assets/blank_light.png" style="width: 100%; height: auto" width="2084" height="1033">
+							</picture>
+							<figcaption style="position: absolute; bottom: 6%; right: 2ch">Spis Osób Autorskich</figcaption>
+						</figure>
+					</a>
+			</section>
+		</main>
+
+		<footer style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 0.5rem">
+	<div style="display: flex; flex-direction: row; gap: 1ch; justify-content: center; align-items: center">
+		<a style="font-size: 1.2em" href="/">Strona Główna</a>
+		<a style="font-size: 1.2em" href="/o-nas/">O Nas</a>
+		<a style="font-size: 1.2em" href="/kontakt/">Kontakt</a>
+	</div>
+	<div style="display: flex; gap: 1ch">
+		<a href="https://www.facebook.com/czasopismo.pozalinia/" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=435&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=435&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+		<a href="https://www.instagram.com/pozalinia/" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=32292&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=32292&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+		<a href="/releases.rss" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=478&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=478&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+	</div>
+</footer>
+
+
+		<script>
+			document.addEventListener('keyup', (e) => {
+				switch (e.key) {
+				case 'ArrowRight': document.getElementById('przedmowa')?.click(); e.preventDefault(); return false;
+				}
+			});
+		</script>
+	</body>
+</html>
+

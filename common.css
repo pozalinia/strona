@@ -1,0 +1,32 @@
+@view-transition {
+	navigation: auto;
+}
+
+.pindent p {
+	text-indent: 4ch;
+}
+
+.right p {
+	text-align: right;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: url("/assets/Lora/Lora-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	font-family: Lora;
+}
+a:link,a:visited {
+		color: #006edc;
+}
+@media (prefers-color-scheme: dark) {
+	a:link,a:visited {
+		color: #15ad93;
+	}
+}

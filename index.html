@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>POZa Linią</title>
+		<link rel="icon" href="favicon.jpg">
+		<link rel="stylesheet" href="/common.css">
+
+<style>
+body {
+	background-color: #e0e0e0;
+}
+#release01 {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: calc(100vh - max(12rem, 30vh));
+	background-clip: border-box;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(/assets/okladka1_light.webp);
+	color: #e0e0e0;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #030313;
+	}
+	#release01 {
+		background-image: url(/assets/okladka1_dark.webp);
+		color: #030313;
+	}
+}
+@media (orientation: landscape) {
+	#release01 {
+		background-size: contain;
+	}
+}
+
+@media (orientation: portrait) {
+	#release01 {
+		background-size: cover;
+	}
+}
+
+h2 {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+</style>
+	</head>
+	<body>
+		<header style="display: flex; justify-content: center">
+			<a href="/">
+				<picture>
+					<source srcset="/assets/logo_dark.png" media="(prefers-color-scheme: dark)">
+					<img src="/assets/logo_light.png" style="height: max(8rem, 25vh)" alt="Logo czasopisma POZa Linią">
+				</picture>
+			</a>
+		</header>
+
+		<a href="/1/" id="release01">
+			<h2 style="transform: translate(-8vw, -20vh)">Wydanie 1:<br>Geometrie</h2>
+		</a>
+
+	<div style="max-width: 1000px; margin-inline: auto">
+		<footer style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 0.5rem">
+	<div style="display: flex; flex-direction: row; gap: 1ch; justify-content: center; align-items: center">
+		<a style="font-size: 1.2em" href="/">Strona Główna</a>
+		<a style="font-size: 1.2em" href="/o-nas/">O Nas</a>
+		<a style="font-size: 1.2em" href="/kontakt/">Kontakt</a>
+	</div>
+	<div style="display: flex; gap: 1ch">
+		<a href="https://www.facebook.com/czasopismo.pozalinia/" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=435&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=435&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+		<a href="https://www.instagram.com/pozalinia/" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=32292&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=32292&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+		<a href="/releases.rss" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=478&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=478&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+	</div>
+</footer>
+
+		</div>
+	</body>
+</html>

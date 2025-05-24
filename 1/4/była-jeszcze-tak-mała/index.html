@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>była jeszcze tak mała | Wydanie 1 POZa Linią</title>
+		<link rel="stylesheet" href="/common.css">
+<style>
+@font-face {
+  font-family: "Lora";
+  src: url("/assets/Lora/Lora-VariableFont_wght.ttf") format("truetype");
+}
+.inactive {
+	color: #ccc;
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #333;
+		color: white;
+	}
+	.inactive {
+		color: #999;
+	}
+}
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 1700px;
+	margin-inline: auto;
+	padding: 10px;
+	gap: 1rem;
+	font-family: sans-serif;
+	font-size: 18px;
+	min-height: 100vh;
+	min-height: 100svh;
+	max-width: 70ch;
+}
+a:link,a:visited {
+		color: #006edc;
+}
+@media (prefers-color-scheme: dark) {
+	a:link,a:visited {
+		color: #15ad93;
+	}
+}
+
+p {
+	line-height: 1.6;
+	font-family: Lora, sans-serif;
+}
+aside {
+	padding: 5px;
+}
+
+@media only screen and (min-width: 150ch) {
+	aside {
+		position: absolute;
+		top: 2rem;
+		left: 105%;
+		width: 40ch;
+	}
+	aside > details {
+		border-radius: 0.5rem; padding: 0.5rem; color: #030313;
+		background-color: #ffd289;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		aside > details {
+			background-color: #d5d3bf;
+		}
+	}
+}
+
+h1 > * {
+	margin: 0;
+	padding: 0;
+	text-wrap: balance;
+}
+
+#goprev, #gonext {
+	transition: transform 300ms ease-in;
+}
+
+#goprev:hover, #gonext:hover {
+	transform: scale(1.2);
+}
+
+details span::after {
+	content: " (rozwiń)";
+	opacity: 0.7;
+}
+
+details[open] span::after {
+	content: " (zwiń)";
+	opacity: 0.7;
+}
+</style>
+	</head>
+	<body style="display: flex; flex-direction: column; justify-content: space-between">
+		<div>
+			<header style="display: flex; justify-content: center">
+				<a href="/">
+					<picture>
+						<source srcset="/assets/logo_dark.png" media="(prefers-color-scheme: dark)">
+						<img src="/assets/logo_light.png" style="height: max(8rem, 25vh)" alt="Logo czasopisma POZa Linią">
+					</picture>
+				</a>
+			</header>
+			<main style="position: relative">
+				<h1 style="text-align: center; display: flex; gap: 1rem; justify-content: center; align-items: center">
+
+						<a id="goprev" href="/1/4/jedyny-%C5%9Bnieg-tego-lata/" style="text-decoration: none">◁</a>
+
+					<p>była jeszcze tak mała</p>
+
+
+						<a id="gonext" href="/1/4/rozpisane-w-czasie-obrazy/" style="text-decoration: none">▷</a>
+				</h1>
+				<p>że wpadła w wir elektronowy<br>
+wyczuwalny jedynie diamentową igłą z wakatem azotowym<br>
+na samym czubku, a jednak<br>
+wsiąkała coraz głębiej wiosłując<br>
+rozpaczliwie nietrwałym aparatem<br>
+i wybrzuszając centrum</p>
+<p>najgorsze drżenie, że wypadnie<br>
+po drugiej stronie<br>
+i tej krótkiej smyczy tam</p>
+
+				<aside>
+					<details class="bio">
+						<summary><span>Olga Juskowiak</span></summary>
+						Olga Juskowiak – graficzka, poetka, absolwentka poznańskiej Akademii Sztuk Pięknych. Jej książka „Zamawiamy gofry” zdobyła Nagrodę Specjalną w XXIX Konkursie im. Jacka Bierezina w 2023 roku. Nagradzana i wyróżniana także w innych konkursach, np. Nowym Dokumencie Tekstowym czy Konkursie im. Anny Świrszczyńskiej. Publikowała m.in. w „Czasie Literatury”, „8. Arkuszu Odry”, „Nowym Napisie”, „Tyglu Kultury”, „Stronie Czynnej”, „Liberte”, „Tlenie Literackim”, „Helikopterze”, „Suburbiach”. Zawodowo i prywatnie związana z Poznaniem. Ma dwie córki.
+						<a href="/osoby/olga-juskowiak/">Wszystkie teksty</a>
+					</details>
+				</aside>
+			</main>
+			<nav class="bottom" style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 1rem; font-size: 2rem; margin-top: 2rem">
+					<a id="goprev" href="/1/4/jedyny-%C5%9Bnieg-tego-lata/" style="text-decoration: none">◁</a>
+
+				<div style="display: flex; gap: 1ch; margin: 0">
+					<a style="font-size: 1rem" href="/1/">Wydanie 1 „Geometrie”</a>
+					<a style="font-size: 1rem" href="/1/4/">FALE & FUNKCJE</a>
+				</div>
+
+					<a id="gonext" href="/1/4/rozpisane-w-czasie-obrazy/" style="text-decoration: none">▷</a>
+			</nav>
+		</div>
+		<footer style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 0.5rem">
+	<div style="display: flex; flex-direction: row; gap: 1ch; justify-content: center; align-items: center">
+		<a style="font-size: 1.2em" href="/">Strona Główna</a>
+		<a style="font-size: 1.2em" href="/o-nas/">O Nas</a>
+		<a style="font-size: 1.2em" href="/kontakt/">Kontakt</a>
+	</div>
+	<div style="display: flex; gap: 1ch">
+		<a href="https://www.facebook.com/czasopismo.pozalinia/" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=435&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=435&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+		<a href="https://www.instagram.com/pozalinia/" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=32292&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=32292&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+		<a href="/releases.rss" target="_blank">
+			<picture>
+				<source srcset="https://img.icons8.com/?size=100&id=478&format=png&color=15ad93" media="(prefers-color-scheme: dark)">
+				<img src="https://img.icons8.com/?size=100&id=478&format=png&color=006edc" style="height: 2em">
+			</picture>
+		</a>
+	</div>
+</footer>
+
+		<script>
+			document.addEventListener('keyup', (e) => {
+				switch (e.key) {
+				case 'ArrowLeft':  document.getElementById('goprev')?.click(); e.preventDefault(); return false;
+				case 'ArrowRight': document.getElementById('gonext')?.click(); e.preventDefault(); return false;
+				}
+			});
+		</script>
+	</body>
+</html>
+
