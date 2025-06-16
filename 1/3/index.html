@@ -56,12 +56,6 @@ p {
 	line-height: 1.6;
 	font-family: Lora, sans-serif;
 }
-	@media (prefers-color-scheme: dark) {
-		aside > details {
-			background-color: #d5d3bf;
-		}
-	}
-}
 
 h1 > * {
 	margin: 0;
@@ -86,6 +80,24 @@ details[open] span::after {
 	content: " (zwiń)";
 	opacity: 0.7;
 }
+
+@media (min-width: 60ch) {
+	#group_img {
+		display: grid;
+	}
+	#group_img > * {
+		grid-column: 1;
+		grid-row: 1;
+		color: #222;
+	}
+	#group_img section {
+		padding-right: 1ch;
+	}
+	#group_img section {
+		max-width: 50%;
+		justify-self: end;
+	}
+}
 </style>
 	</head>
 	<body style="display: flex; flex-direction: column; justify-content: space-between">
@@ -98,17 +110,17 @@ details[open] span::after {
 					</picture>
 				</a>
 			</header>
-			<div style="position: relative">
+			<div id="group_img">
 				<picture>
 					<source srcset="/assets/proste_dark.png" media="(prefers-color-scheme: dark)">
 					<img style="width: 100%" src="/assets/proste_light.png">
 				</picture>
-			<section style="position: absolute; bottom: 1rem; right: 1rem; font-size: 1rem; text-align: right; color: #222"><p>„Pamiętaj, że linia melodyczna powinna podkreślać i<br>
+				<section style="text-align: right"><p>„Pamiętaj, że linia melodyczna powinna podkreślać i<br>
 wzmacniać treść tekstu, tworząc jedność między<br>
 słowami a muzyką”.</p>
 <p>(z poradnika fabrykahitow.pl)</p>
 </section>
-					</div>
+			</div>
 			<main style="position: relative">
 				<h1 style="text-align: center; display: flex; gap: 1rem; justify-content: center; align-items: center">
 
@@ -148,19 +160,19 @@ Czy literatura podąża po liniach, kryje się za liniami, czy też linie wyznac
 					<a id="goprev" href="/1/2/sieci-zasilaj%C4%85ce/" style="text-decoration: none">◁</a>
 
 				<div style="display: flex; gap: 1ch; margin: 0">
-					<a style="font-size: 1rem" href="/1/">Wydanie 1 „Geometrie”</a>
-					<a style="font-size: 1rem" href="/1/3/">PROSTE = (Z)ŁAMANE</a>
+					<a style="font-size: 1rem; text-align: right" href="/1/">Wydanie 1 „Geometrie”</a>
+					<a style="font-size: 1rem; text-align: left" href="/1/3/">PROSTE = (Z)ŁAMANE</a>
 				</div>
 
 					<a id="gonext" href="/1/3/raport-cz%C4%85stkowy/" style="text-decoration: none">▷</a>
 			</nav>
 		</div>
 		<footer style="display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 0.5rem">
-	<div style="display: flex; flex-direction: row; gap: 1ch; justify-content: center; align-items: center">
+	<nav style="display: flex; flex-direction: row; gap: 1ch; align-items: center; flex-wrap: wrap; margin-right: 1ch;">
 		<a style="font-size: 1.2em" href="/">Strona Główna</a>
 		<a style="font-size: 1.2em" href="/o-nas/">O Nas</a>
 		<a style="font-size: 1.2em" href="/kontakt/">Kontakt</a>
-	</div>
+	</nav>
 	<div style="display: flex; gap: 1ch">
 		<a href="https://www.facebook.com/czasopismo.pozalinia/" target="_blank">
 			<picture>
